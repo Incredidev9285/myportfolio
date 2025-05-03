@@ -13,7 +13,7 @@ export function CV() {
 
   useEffect(() => {
     const { locale } = router;
-    setCurrentLang(locale as 'en' | 'ta');
+    //setCurrentLang(locale as 'en' | 'ta');
   }, [router.locale]);
 
   return (
@@ -39,16 +39,16 @@ export function CV() {
               </div>
             </div>
           </CVDescription>
-          
+
           <Curriculum>
             <img src="/cv.png" alt="Resume" />
             <a href="/pdf/RaniyDream_Resume.pdf" download>
               <ButtonSecondAlt>
-                <b>{currentLang === 'ta' ? 'சுயவிவரத்தை பதிவிறக்கவும்' : 'Download CV'}</b> <FiDownload size={20}  />
+                <b>{currentLang === 'ta' ? 'சுயவிவரத்தை பதிவிறக்கவும்' : 'Download CV'}</b> <FiDownload size={20} />
               </ButtonSecondAlt>
             </a>
           </Curriculum>
-        </CVContent>        
+        </CVContent>
       </CVContainer>
     </Container>
   )

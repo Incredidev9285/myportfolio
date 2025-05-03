@@ -12,7 +12,7 @@ export function Wakatime() {
 
   useEffect(() => {
     const { locale } = router;
-    setCurrentLang(locale as 'en' | 'ta');
+    //setCurrentLang(locale as 'en' | 'ta');
   }, [router.locale]);
 
   const currentDate = new Date();

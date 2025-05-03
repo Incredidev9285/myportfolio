@@ -26,7 +26,7 @@ export function Form() {
 
   useEffect(() => {
     const { locale } = router;
-    setCurrentLang(locale as 'en' | 'ta');
+    //setCurrentLang(locale as 'en' | 'ta');
   }, [router.locale]);
 
   const { register, reset } = useForm<ContactFormData>({
@@ -39,7 +39,7 @@ export function Form() {
 
   const onSubmits = async (event: FormEvent) => {
     event.preventDefault()
-    
+
     try {
       await sendContactMail(name, email, message)
       toast.success(currentLang === 'ta' ? 'செய்தி வெற்றிகரமாக அனுப்பப்பட்டது!' : 'Message Sent Successfully!')

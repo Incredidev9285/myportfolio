@@ -1,4 +1,4 @@
-/* eslint-disable @next/next/no-img-element */ 
+/* eslint-disable @next/next/no-img-element */
 import Image from 'next/image'
 import Link from 'next/link'
 import certificates from '../../data/certificates'
@@ -19,7 +19,7 @@ export function Educations() {
 
   useEffect(() => {
     const { locale } = router;
-    setCurrentLang(locale as 'en' | 'ta');
+    //setCurrentLang(locale as 'en' | 'ta');
   }, [router.locale]);
 
   return (

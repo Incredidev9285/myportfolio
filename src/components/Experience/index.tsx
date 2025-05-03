@@ -23,7 +23,7 @@ export function Experience() {
 
   useEffect(() => {
     const { locale } = router;
-    setCurrentLang(locale as 'en' | 'ta');
+    //setCurrentLang(locale as 'en' | 'ta');
   }, [router.locale]);
 
   useEffect(() => {
@@ -32,7 +32,7 @@ export function Experience() {
   return (
     <Container>
       <Title>
-        {currentLang === 'ta' ? 'அனுபவம்' : 'Experience'}  
+        {currentLang === 'ta' ? 'அனுபவம்' : 'Experience'}
         <span>
           <Briefcase /> {currentLang === 'ta' ? 'பயிற்சி' : 'Internship'}
         </span>
@@ -60,7 +60,7 @@ export function Experience() {
                       width={60}
                       height={60}
                       src={exp.img}
-                      alt={exp.title.en} 
+                      alt={exp.title.en}
                       loading="lazy"
                     />
                   }

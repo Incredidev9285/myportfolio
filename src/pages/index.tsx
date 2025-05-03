@@ -27,20 +27,20 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 const botkey = process.env.NEXT_PUBLIC_BOTKEY_URL;
 
 export default function Home() {
-  const { t, i18n } = useTranslation('common'); // Use the 'common' namespace
+  // const { t, i18n } = useTranslation('common'); // Use the 'common' namespace
   const router = useRouter();
   const [currentLang, setCurrentLang] = useState<'en' | 'ta'>('en');
 
   useEffect(() => {
     const { locale } = router;
-    setCurrentLang(locale as 'en' | 'ta');
+    setCurrentLang('en');
   }, [router.locale]);
 
 
   return (
     <>
       <Head>
-        <title>{currentLang === 'ta' ? 'சரவணகுமாரின் போர்ட்ஃபோலியோ' : ' RainyDreams\'s Portfolio'} </title>
+        <title>Christopher's Portfolio</title>
       </Head>
       <ScrollTop />
       <Section>

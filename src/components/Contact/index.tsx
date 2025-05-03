@@ -19,7 +19,7 @@ export function Contact() {
 
   useEffect(() => {
     const { locale } = router;
-    setCurrentLang(locale as 'en' | 'ta');
+    //setCurrentLang(locale as 'en' | 'ta');
   }, [router.locale]);
 
   return (
@@ -76,15 +76,15 @@ export function Contact() {
           {currentLang === 'ta' ? 'எனது நாட்காட்டியைக் காண்க' : 'See my Calendar'}
         </Title>
         <ResponsiveIframeContainer>
-        <iframe
-          src={calender}
-          style={{ border: 0 }}
-          width="800"
-          height="600"
-          frameBorder="0"
-          scrolling="no"
-          title="Google Calendar"
-        ></iframe>
+          <iframe
+            src={calender}
+            style={{ border: 0 }}
+            width="800"
+            height="600"
+            frameBorder="0"
+            scrolling="no"
+            title="Google Calendar"
+          ></iframe>
         </ResponsiveIframeContainer>
       </ContainerContact>
     </Section>

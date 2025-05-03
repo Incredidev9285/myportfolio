@@ -28,7 +28,7 @@ export function Projects() {
 
   useEffect(() => {
     const { locale } = router;
-    setCurrentLang(locale as 'en' | 'ta');
+    //setCurrentLang(locale as 'en' | 'ta');
   }, [router.locale]);
 
   /* For Multiple Selection
@@ -72,11 +72,11 @@ export function Projects() {
       </div> */}
 
       <ProjectsContainer>
-      {projects
-        .filter(project =>
-          selectedTags.includes('All') || project.tags.some(tag => selectedTags.includes(tag.name))
-        )
-        .slice(0, 9)
+        {projects
+          .filter(project =>
+            selectedTags.includes('All') || project.tags.some(tag => selectedTags.includes(tag.name))
+          )
+          .slice(0, 9)
           .map(project => (
             <Link href={`/project/${project.url}`} key={project.id}>
               <ProjectsContent>

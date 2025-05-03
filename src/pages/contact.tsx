@@ -17,13 +17,13 @@ export default function Contacts() {
 
   useEffect(() => {
     const { locale } = router;
-    setCurrentLang(locale as 'en' | 'ta');
+    //setCurrentLang(locale as 'en' | 'ta');
   }, [router.locale]);
 
   return (
     <>
       <Head>
-        <title>{currentLang === 'ta' ? 'தொடர்பு | சரவணகுமார்' : 'Contact | RaniyDream'}</title>
+        <title>{currentLang === 'ta' ? 'தொடர்பு | சரவணகுமார்' : 'Contact | Christopher'}</title>
         <meta
           name="description"
           content="Feel free to get in touch and let's talk about how we can work together."
@@ -34,7 +34,7 @@ export default function Contacts() {
           content="Feel free to get in touch and let's talk about how we can work together."
         />
 
-        
+
       </Head>
 
       <ScrollTop />

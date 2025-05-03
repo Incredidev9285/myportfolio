@@ -40,7 +40,7 @@ export default function BlogDetail({ htmlContent, title, date, readTime, tags, d
 
   useEffect(() => {
     const { locale } = router;
-    setCurrentLang(locale as 'en' | 'ta');
+    //setCurrentLang(locale as 'en' | 'ta');
   }, [router.locale]);
 
   useEffect(() => {

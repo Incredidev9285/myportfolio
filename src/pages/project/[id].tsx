@@ -8,7 +8,7 @@ import ReactPlayer from 'react-player'
 import { Footer } from '../../components/Footer'
 import * as S from '../../styles/project'
 import { ButtonAlt, ButtonSecondary, Title, Description } from '../../styles/styles'
-import { ArrowLeft, ChatCenteredText, Image as IconImage, YoutubeLogo, Hash, ChalkboardSimple,UsersThree, Clock } from 'phosphor-react'
+import { ArrowLeft, ChatCenteredText, Image as IconImage, YoutubeLogo, Hash, ChalkboardSimple, UsersThree, Clock } from 'phosphor-react'
 import { FaAddressBook, FaBlog, FaGithub, FaGoogle, FaInstagram, FaLinkedin, FaTrello, FaTwitter } from 'react-icons/fa'
 import { BsGlobe } from 'react-icons/bs'
 
@@ -19,7 +19,7 @@ interface ProjectProps {
 export default function Projeto({ project }: ProjectProps) {
   return <>
     <Head>
-      <title>{project.title} | RaniyDream </title>
+      <title>{project.title} | Christopher </title>
       <meta name="description" content={project.description} />
       <meta property="og:title" content={project.title} />
       <meta property="og:description" content={project.description} />
@@ -229,7 +229,7 @@ export default function Projeto({ project }: ProjectProps) {
           </span>
       </Title>
         </S.DescriptionProject> */}
-        {/* <S.Team>
+      {/* <S.Team>
         <S.TeamContent>
           {project.team &&
             project.team.map((team: any) => (

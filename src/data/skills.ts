@@ -29,19 +29,19 @@ const cardSkills = [
   {
     id: 4,
     title: {
-      en: 'Ruby on Rails',
+      en: 'Node.js',
       ta: 'டைப்ஸ்கிரிப்ட்',
     },
-    img: '/icons/ruby.png',
+    img: '/icons/node.png',
     color: '#007ACC'
   },
   {
     id: 5,
     title: {
-      en: 'Go',
+      en: 'Python',
       ta: 'ரியாக்ட்',
     },
-    img: '/icons/go.png',
+    img: '/icons/python.png',
     color: '#61DAFB'
   },
   {
@@ -129,10 +129,10 @@ const cardSkills = [
   {
     id: 15,
     title: {
-      en: 'Python',
+      en: 'Golang',
       ta: 'கான்வா',
     },
-    img: '/icons/python.png',
+    img: '/icons/go.png',
     color: '#00C408'
   }
   ,
@@ -149,10 +149,10 @@ const cardSkills = [
   {
     id: 17,
     title: {
-      en: 'NodeJS',
+      en: 'Ruby',
       ta: 'கான்வா',
     },
-    img: '/icons/node.png',
+    img: '/icons/ruby.png',
     color: '#07755C'
   }
   ,

@@ -7,7 +7,7 @@ import blog from '../data/blogs';
 import { Footer } from '../components/Footer';
 import { ScrollTop } from '../components/ScrollTop';
 import * as S from '../styles/Blogs';
-import { FiltersContainer, BButton} from '../styles/Blogs';
+import { FiltersContainer, BButton } from '../styles/Blogs';
 import * as T from '../styles/styles';
 import { HiOutlineDesktopComputer } from 'react-icons/hi';
 import { FaSearch } from 'react-icons/fa';
@@ -38,7 +38,7 @@ export default function Blog() {
 
   useEffect(() => {
     const { locale } = router;
-    setCurrentLang(locale as 'en' | 'ta');
+    //setCurrentLang(locale as 'en' | 'ta');
   }, [router.locale]);
 
   const handleChange = (e: BlogProps) => {

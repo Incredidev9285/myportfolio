@@ -14,16 +14,16 @@ export function CardContact() {
 
   useEffect(() => {
     const { locale } = router;
-    setCurrentLang(locale as 'en' | 'ta');
+    //setCurrentLang(locale as 'en' | 'ta');
   }, [router.locale]);
 
   return (
     <Section>
       <CardContactContainer>
-        <div className='ellipse'> 
+        <div className='ellipse'>
           <Image
             width={330}
-            height={410} 
+            height={410}
             src="/vectors/circles.svg"
             alt="circles"
             loading="lazy"
@@ -38,11 +38,11 @@ export function CardContact() {
           </div>
 
           <div className="contact">
-            <Image 
-              width={480} 
-              height={500} 
-              src="/contact.svg" 
-              alt="imagem de contato" 
+            <Image
+              width={480}
+              height={500}
+              src="/contact.svg"
+              alt="imagem de contato"
               loading="lazy"
             />
           </div>

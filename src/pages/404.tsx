@@ -74,7 +74,7 @@ export default function Error() {
 
   useEffect(() => {
     const { locale } = router;
-    setCurrentLang(locale as 'en' | 'ta');
+    //setCurrentLang(locale as 'en' | 'ta');
   }, [router.locale]);
 
   return <>
@@ -87,19 +87,19 @@ export default function Error() {
         content="Ei! Parece que você está perdido"
       />
     </Head>
-    
+
     <Styles404>
-    <img src="/vectors/404.svg" alt="404" width={500} height={300}/>
+      <img src="/vectors/404.svg" alt="404" width={500} height={300} />
       <Content>
         <span> {currentLang === 'ta' ? 'ஏய்! நீங்கள் தொலைந்துவிட்டீர்கள் போல் தெரிகிறது :((' : 'Hey! Looks like you are lost :(('}  </span>
         <h1>
           {' '}
-          404 <br />  {currentLang === 'ta' ? 'பக்கம் கிடைக்கவில்லை' : 'Page not found'}  
+          404 <br />  {currentLang === 'ta' ? 'பக்கம் கிடைக்கவில்லை' : 'Page not found'}
         </h1>
         <Link href={'/'} legacyBehavior>
           <ButtonAlt>
             <ArrowLeft weight="bold" size={18} />
-            {currentLang === 'ta' ? 'திரும்பி செல்' : 'Go Back'}  
+            {currentLang === 'ta' ? 'திரும்பி செல்' : 'Go Back'}
           </ButtonAlt>
         </Link>
       </Content>

@@ -19,7 +19,7 @@ export function Publications() {
 
   useEffect(() => {
     const { locale } = router;
-    setCurrentLang(locale as 'en' | 'ta');
+    //setCurrentLang(locale as 'en' | 'ta');
   }, [router.locale]);
 
   return (
@@ -31,21 +31,21 @@ export function Publications() {
         </span>
       </Title>
       <S.PublicationContainer>
-      <Carousel showArrows={true} showThumbs={false} infiniteLoop={true} showStatus={false} showIndicators={true} autoPlay={false}>
-        {publications.map((publication, index) => (
-          <div key={index}>
-            <PublicationCard
-              title={publication.title[currentLang]}
-              description={publication.description[currentLang]}
-              authors={publication.authors[currentLang]}
-              publicationDate={publication.publicationDate[currentLang]}
-              source={publication.source[currentLang]}
-              link={publication.link} 
-              id={publication.id}           
-            />
-          </div>
-        ))}
-      </Carousel>
+        <Carousel showArrows={true} showThumbs={false} infiniteLoop={true} showStatus={false} showIndicators={true} autoPlay={false}>
+          {publications.map((publication, index) => (
+            <div key={index}>
+              <PublicationCard
+                title={publication.title[currentLang]}
+                description={publication.description[currentLang]}
+                authors={publication.authors[currentLang]}
+                publicationDate={publication.publicationDate[currentLang]}
+                source={publication.source[currentLang]}
+                link={publication.link}
+                id={publication.id}
+              />
+            </div>
+          ))}
+        </Carousel>
       </S.PublicationContainer>
       <ORCID />
     </Container>

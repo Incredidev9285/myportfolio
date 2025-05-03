@@ -6,7 +6,7 @@ import { AchievementsContainer, AchievementsContent } from './styles'
 import { Container, Title } from '../../styles/styles'
 import { HiOutlineDesktopComputer } from 'react-icons/hi'
 import { Carousel } from 'react-responsive-carousel';
-import "react-responsive-carousel/lib/styles/carousel.min.css"; 
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Key } from 'react'
 import { useTranslation } from 'react-i18next'
 import { useRouter } from 'next/router'
@@ -27,7 +27,7 @@ export function Achievements() {
 
   useEffect(() => {
     const { locale } = router;
-    setCurrentLang(locale as 'en' | 'ta');
+    //setCurrentLang(locale as 'en' | 'ta');
   }, [router.locale]);
 
   return (
@@ -36,7 +36,7 @@ export function Achievements() {
         {currentLang === 'ta' ? 'விருதுகள்!' : 'Accolades!'}
         <span>
           <HiOutlineDesktopComputer />{currentLang === 'ta' ? 'சிறந்த' : 'Outstanding'}
-        </span>      
+        </span>
       </Title>
       <AchievementsContainer>
         {achievements.slice(0, 9).map(achievements => {
@@ -56,14 +56,14 @@ export function Achievements() {
                 <Carousel showArrows={true} showThumbs={false} infiniteLoop={true} showStatus={true} showIndicators={true} autoPlay={true} transitionTime={1000}>
                   {achievements.image.map((image: any, index: Key | null | undefined) => (
                     <div key={index}>
-                      <Image src={image} alt={achievements.name[currentLang]} width={300} height={300} loading="lazy"/>
+                      <Image src={image} alt={achievements.name[currentLang]} width={300} height={300} loading="lazy" />
                     </div>
                   ))}
                 </Carousel>
               </div>
               <div className="description">
                 <span>{achievements.description[currentLang]}</span>
-              </div>              
+              </div>
             </AchievementsContent>
           );
         })}

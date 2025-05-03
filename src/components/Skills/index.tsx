@@ -23,7 +23,7 @@ export function Skills() {
 
   useEffect(() => {
     const { locale } = router;
-    setCurrentLang(locale as 'en' | 'ta');
+    //setCurrentLang(locale as 'en' | 'ta');
   }, [router.locale]);
 
   return (
@@ -49,8 +49,8 @@ export function Skills() {
               {/* eslint-disable-next-line jsx-a11y/alt-text */}
               <Image
                 width={60}
-                height={60} 
-                src={skill.img} 
+                height={60}
+                src={skill.img}
                 alt={skill.title[currentLang]}
                 loading='lazy'
               />

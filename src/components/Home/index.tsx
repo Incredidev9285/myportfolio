@@ -22,7 +22,7 @@ export function HomeHero() {
 
   useEffect(() => {
     const { locale } = router;
-    setCurrentLang(locale as 'en' | 'ta');
+    //setCurrentLang(locale as 'en' | 'ta');
   }, [router.locale]);
 
   function openModal() {
@@ -38,10 +38,10 @@ export function HomeHero() {
       <Content>
         <HomeText>
           <p>
-            <span>👋🏻</span> {currentLang === 'ta' ? 'வணக்கம், எனது பெயர்' : 'Hello, my name is'}
+            <span>👋🏻</span> {'Hello, my name is'}
           </p>
           <h1>
-            {currentLang === 'ta' ? 'சரவணகுமார் ரா' : 'Keston Atwater'}  
+            {'Christopher Musenze'}
             <span className="animation">
               <Image
                 width={200}
@@ -55,7 +55,7 @@ export function HomeHero() {
           <h2>
             <Typewriter
               options={{
-                strings: [currentLang === 'ta' ? 'டெவலப்பர் | பேச்சாளர் | தன்னார்வலர்' : ' Sr.Full Stack Developer | Web Designer '],
+                strings: [' Sr.Full Stack & AI Engineer | Web Designer '],
                 autoStart: true,
                 loop: true,
               }}
@@ -64,14 +64,14 @@ export function HomeHero() {
 
           <div className="button">
             <ButtonPrimary>
-              <Link href={'/projects'}><b>{currentLang === 'ta' ? 'எனது கதையைப் பார்க்கவும்' : 'See my Portfolio'}</b></Link> 
+              <Link href={'/projects'}><b>{'Welcome to my Portfolio!'}</b></Link>
               <FiArrowRight style={{ marginBottom: '-0.3rem' }} size={20} />
             </ButtonPrimary>
 
           </div>
         </HomeText>
         <ImgHome>
-          <img className="home-img" src="/home.png" alt={currentLang === 'ta' ? 'முகப்பு படம்' : 'Image Home'} />
+          <img className="home-img" src="/CV.png" alt={'Image Home'} />
 
           <div className="code">
             <Image

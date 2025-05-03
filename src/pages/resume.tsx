@@ -16,7 +16,7 @@ const canva = process.env.NEXT_PUBLIC_CANVA_URL;
 
 export default function Resume() {
   const resumeData = { canva }
-  
+
   let previewData = '';
   if (resumeData.canva) {
     previewData = `${resumeData.canva.substr(
@@ -31,7 +31,7 @@ export default function Resume() {
 
   useEffect(() => {
     const { locale } = router;
-    setCurrentLang(locale as 'en' | 'ta');
+    //setCurrentLang(locale as 'en' | 'ta');
   }, [router.locale]);
 
   return (
@@ -58,7 +58,7 @@ export default function Resume() {
             <BsFileText /> {currentLang === 'ta' ? 'சுயவிவரம்' : 'Resume'}
           </span>
         </Title>
-        <Description style={{width:'100%', textAlign: 'center', marginBottom: '1px'}}>
+        <Description style={{ width: '100%', textAlign: 'center', marginBottom: '1px' }}>
           {currentLang === 'ta' ? 'இது எனது புதுப்பிக்கப்பட்ட சுயவிவரம், Canva இணையதளத்தால் இயக்கப்படுகிறது. கீழே உள்ள பதிவிறக்க பொத்தானைக் கிளிக் செய்வதன் மூலம் எனது தொழில்முறை சுயவிவரத்தை நீங்கள் பதிவிறக்கம் செய்யலாம்.' : 'This is my updated resume, powered by Canva website. You can download my professional resume by clicking on the download button below.'}
         </Description>
 

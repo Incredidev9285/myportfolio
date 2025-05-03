@@ -32,7 +32,7 @@ export default function Projects() {
   return (
     <>
       <Head>
-        <title>Projects | RaniyDream </title>
+        <title>Projects | Christoper </title>
         <meta
           name="description"
           content="I love to code using tools like React, NextJS, Tailwind, Styled Components and more! Here are some of my favorite projects."
@@ -100,7 +100,7 @@ export default function Projects() {
                       </div>
                       <div className="description">
                         <p>{project.description}</p>
-                        <h4 style={{marginBottom:"1rem"}} className="date">Tech Stack:</h4>
+                        <h4 style={{ marginBottom: "1rem" }} className="date">Tech Stack:</h4>
                         <div className="tags">
                           {project.tech.map((tag) => {
                             return <span key={tag.name}>{tag.name}</span>;

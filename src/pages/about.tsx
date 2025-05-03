@@ -30,12 +30,12 @@ export default function About() {
 
   useEffect(() => {
     const { locale } = router;
-    setCurrentLang(locale as 'en' | 'ta');
+    //setCurrentLang(locale as 'en' | 'ta');
   }, [router.locale]);
 
   return <>
     <Head>
-      <title>{currentLang === 'ta' ? 'பற்றி | சரவணகுமார்' : 'About | RaniyDream'}</title>
+      <title>{currentLang === 'ta' ? 'பற்றி | சரவணகுமார்' : 'About | Christopher'}</title>
       <meta
         name="description"
         content={currentLang === 'ta' ? 'நான் சரவணகுமார், வேலம்மல் பொறியியல் கல்லூரியின் மாணவர், எலக்ட்ரானிக்ஸ் மற்றும் கம்யூனிகேஷன் இன்ஜினியரிங் படித்து வருகிறேன் மற்றும் தொழில்நுட்பத்தில் ஒரு வலுவான அடித்தளத்தை உருவாக்குகிறேன்.' : 'I am RaniyDream, a proud student of Velammal Engineering College, where I am pursuing a Bachelors degree in Electronics and Communication Engineering and building a solid foundation in technology.'}
@@ -62,7 +62,7 @@ export default function About() {
           <S.AboutImage>
             <img
               className="AboutImg"
-              src="/rainycard.jpg"
+              src="/chris.jpg"
               alt="RaniyDream"
             />
 
@@ -113,19 +113,19 @@ export default function About() {
           </S.AboutImage>
           <S.AboutDescription>
             <p style={{ textAlign: 'justify' }}>
-              {currentLang === 'ta' ? '👋 .' : '👋 Hi! I am Keston Atwater, a Senior Software Engineer with over a decade of experience steering software development at leading companies.'}
+              {currentLang === 'ta' ? '👋 .' : '👋 Hi! I am Christopher Musenze, a Senior Software Engineer with over a decade of experience steering software development at leading companies.'}
             </p>
             <p style={{ textAlign: 'justify' }}>
-              {currentLang === 'ta' ? '💻 .' : '💻I am now taking the leap into freelancing, eager to make the most of my expertise and deliver solutions that make a difference..'}
+              {currentLang === 'ta' ? '💻 .' : '💻I am eager to make the most of my expertise and deliver solutions that make a difference..'}
             </p>
             <p style={{ textAlign: 'justify' }}>
-              {currentLang === 'ta' ? '🎉  💥.' : '🎉 Throughout my career, I have rolled up my sleeves and worked hands-on with a variety of technologies, including Angular, React, Vue.js, Ruby on Rails, Node.js, and Go. My efforts have led to significant boosts in user engagement and enhanced operational efficiency.💥.'}
+              {currentLang === 'ta' ? '🎉  💥.' : '🎉 Throughout my career, I have rolled up my sleeves and worked hands-on with a variety of technologies, including Angular, React, Vue.js, Python, Node.js, and Java. My efforts have led to significant boosts in user engagement and enhanced operational efficiency.💥.'}
             </p>
             <p style={{ textAlign: 'justify' }}>
               {currentLang === 'ta' ? '🧩 என் நேரத்தில், புதிர்கள் மற்றும் மூளைக்கவசங்களை தீர்க்க நான் விரும்புகிறேன், இது எனக்கு கூர்மையாகவும் என் பிரச்சினை தீர்க்கும் திறன்களை சரியாக வைத்திருக்கவும் உதவுகிறது. உலகம் முழுவதும் புராணங்கள் மற்றும் புராணங்களை கற்றுக்கொள்வதில் நான் பெரிய ரசிகன், இது எனக்கு பல்வேறு கலாச்சாரங்கள் மற்றும் பாரம்பரியங்களைப் பற்றிய ஒரு பார்வையை அளிக்கிறது 🌍.' : '🧩 In my free time, I love to solve puzzles and brain teasers, which helps me stay sharp and keep my problem-solving skills on point. I am also a big fan of learning myths and legends from around the world 🌍, which gives me a glimpse into different cultures and traditions.'}
             </p>
             <p style={{ textAlign: 'justify' }}>
-              {currentLang === 'ta' ? '🙌' : '🙌My journey has allowed me to craft robust RESTful APIs, implement smooth CI/CD processes, and elevate application performance—all while collaborating with talented teams.'}
+              {currentLang === 'ta' ? '🙌' : '🙌My journey has allowed me to craft robust RESTful APIs, implement smooth CI/CD processes, provide AI solutions, and elevate application performance—all while collaborating with talented teams.'}
             </p>
             <p style={{ textAlign: 'justify' }}>
               {currentLang === 'ta' ? '💪ம்🤝.' : '💪 With a solid foundation in Computer Science and an unwavering passion for innovation, I am excited to bring my skills to your projects and help drive your success.'}

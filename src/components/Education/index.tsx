@@ -26,7 +26,7 @@ export function Education() {
 
   useEffect(() => {
     const { locale } = router;
-    setCurrentLang(locale as 'en' | 'ta');
+    //setCurrentLang(locale as 'en' | 'ta');
   }, [router.locale]);
 
   const handleChange = (e: EducationProps) => {

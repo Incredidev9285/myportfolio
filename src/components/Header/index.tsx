@@ -16,7 +16,7 @@ import { useRouter } from 'next/router'
 
 export function Header() {
   const [open, setOpen] = useState(false);
-  const { currentTheme, toggleTheme } = useThemeContext(); 
+  const { currentTheme, toggleTheme } = useThemeContext();
   const handleOpen = () => {
     setOpen(!open);
   };
@@ -25,7 +25,7 @@ export function Header() {
   const [currentLang, setCurrentLang] = useState<'en' | 'ta'>('en');
   useEffect(() => {
     const { locale } = router;
-    setCurrentLang(locale as 'en' | 'ta');
+    //setCurrentLang(locale as 'en' | 'ta');
   }, [router.locale]);
 
   return (
@@ -41,7 +41,7 @@ export function Header() {
               alt="logo"
             />
           </div>
-          {'Rainy keys'}
+          {'Chris'}
         </Link>
         <div className="settings">
           <Settings toggleTheme={toggleTheme} currentTheme={currentTheme} />
@@ -66,17 +66,17 @@ export function Header() {
         <ul>
           <li>
             <Link href={'/'}>
-              <span>{currentLang === 'ta' ? 'முகப்பு' : 'Home'}</span>
+              <span>{'Home'}</span>
             </Link>
           </li>
           <li>
             <Link href={'/about'}>
-              <span>{currentLang === 'ta' ? 'பற்றி' : 'About'}</span>
+              <span>{'About'}</span>
             </Link>
           </li>
           <li>
             <Link href={'/experience'}>
-              <span>{currentLang === 'ta' ? 'அனுபவம்' : 'Experience'}</span>
+              <span>{'Experience'}</span>
             </Link>
           </li>
           {/* <li>
@@ -86,7 +86,7 @@ export function Header() {
           </li> */}
           <li>
             <Link href={'/projects'}>
-              <span>{currentLang === 'ta' ? 'திட்டங்கள்' : 'Projects'}</span>
+              <span>{'Projects'}</span>
             </Link>
           </li>
           {/* <li>
@@ -102,27 +102,27 @@ export function Header() {
         </ul>
         <Icons>
           <Link
-            href={'https://github.com/RaniyDream2003'}
+            href={'https://github.com/'}
             target="_blank"
-            aria-label={currentLang === 'ta' ? 'கிட்ஹப் இணைப்பு' : 'Link to Github'}>
+            aria-label={'Link to Github'}>
             <FiGithub />
           </Link>
           <Link
-            href={'https://www.linkedin.com/in/saravanaramaswamy2003/'}
+            href={'https://www.linkedin.com/in/'}
             target="_blank"
-            aria-label={currentLang === 'ta' ? 'லிங்க்டின் இணைப்பு' : 'Link to Linkedin'}>
+            aria-label={'Link to Linkedin'}>
             <FiLinkedin />
           </Link>
           <Link
-            href={'https://www.instagram.com/RaniyDream.me?utm_source=qr'}
+            href={'https://www.instagram.com/'}
             target="_blank"
-            aria-label={currentLang === 'ta' ? 'இன்ஸ்டாகிராம்' : 'Instagram'}>
+            aria-label={'Instagram'}>
             <FiInstagram />
           </Link>
           <Link
-            href={'https://api.whatsapp.com/send?phone=918838416187'}
+            href={'https://api.whatsapp.com/send?phone=(315)547-6302'}
             target="_blank"
-            aria-label={currentLang === 'ta' ? 'வாட்ஸ்அப் மூலம் தொடர்பு கொள்ள' : 'Link to contact via WhatsApp'}>
+            aria-label={'Link to contact via WhatsApp'}>
             <FaWhatsapp />
           </Link>
         </Icons>

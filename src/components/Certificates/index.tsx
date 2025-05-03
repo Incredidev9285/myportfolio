@@ -1,4 +1,4 @@
-/* eslint-disable @next/next/no-img-element */ 
+/* eslint-disable @next/next/no-img-element */
 import Image from 'next/image'
 import Link from 'next/link'
 import certificates from '../../data/certificates'
@@ -19,7 +19,7 @@ export function Certificates() {
 
   useEffect(() => {
     const { locale } = router;
-    setCurrentLang(locale as 'en' | 'ta');
+    //setCurrentLang(locale as 'en' | 'ta');
   }, [router.locale]);
 
   return (
@@ -43,7 +43,7 @@ export function Certificates() {
                       borderRadius: '50%',
                       objectFit: 'cover',
                     }}
-                    src={certificates.logo} alt={certificates.subTitle[currentLang]} />
+                      src={certificates.logo} alt={certificates.subTitle[currentLang]} />
                     <p>
                       <span><strong>{currentLang === 'ta' ? 'தேதி:' : 'Date:'}</strong> {certificates.level[currentLang]} </span>
                     </p>

@@ -1,0 +1,17 @@
+https://www.sixt.ro/
+
+**Bid:**  
+
+Hi there! I’m an experienced **CS-Cart developer** with a deep understanding of **PHP 7.4+, MySQL, Smarty, AJAX, and jQuery**, making me well-equipped to enhance your **vendor category selection interface**. I understand the challenges of handling large category lists, and I can develop a **custom add-on with a hierarchical tree structure and checkboxes**, ensuring a **faster, more intuitive, and scalable solution**—without modifying CS-Cart’s core functionality.  
+
+I prioritize **seamless integration, future-proofing, and maintaining compatibility with CS-Cart updates**, so you can rely on me for ongoing improvements. Let’s discuss how I can help optimize your marketplace and enhance the vendor experience!  
+
+**Best regards,**  
+Hassan  
+
+Hi there! I’m an experienced CS-Cart developer with a deep understanding of PHP 7.4+, MySQL, Smarty, AJAX, and jQuery, making me well-equipped to enhance your vendor category selection interface. I understand the challenges of handling large category lists, and I can develop a custom add-on with a hierarchical tree structure and checkboxes, ensuring a faster, more intuitive, and scalable solution—without modifying CS-Cart’s core functionality.
+
+I prioritize seamless integration, future-proofing, and maintaining compatibility with CS-Cart updates, so you can rely on me for ongoing improvements. Let’s discuss how I can help optimize your marketplace and enhance the vendor experience!
+
+Best regards,
+Hassan
