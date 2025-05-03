@@ -6,14 +6,14 @@
 
 <h2>🚀 Demo</h2>
 
-[https://saravana.vercel.app/](https://saravana.vercel.app/)
+[https://incredidev.vercel.app/](https://incredidev.vercel.app/)
 
 <h2>🛠️ Installation Steps:</h2>
 
 <p>1. Clone the repository</p>
 
 ```
-git clone https://github.com/RaniyDream2003/Portfolio.git
+git clone https://github.com/Incredidev9285/myPortfolio.git
 ```
 
 <p>2. Navigate to the project directory</p>
